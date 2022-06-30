@@ -24,7 +24,7 @@
 -->
 
 <Segment name="HI" comment="To supply information related to the delivery of health care">
-  <Field name="HealthCareCodeInformation1" type="C022" required="y" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
+  <Field name="HealthCareCodeInformation1" type="C022" required="y" max="2" comment="To send health care codes and their associated dates, amounts and quantities"/>
   <Field name="HealthCareCodeInformation2" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
   <Field name="HealthCareCodeInformation3" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
   <Field name="HealthCareCodeInformation4" type="C022" max="1" comment="To send health care codes and their associated dates, amounts and quantities"/>
