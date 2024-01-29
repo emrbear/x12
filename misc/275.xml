@@ -1,0 +1,56 @@
+<!--
+   This file is part of the X12Parser library that provides tools to
+   manipulate X12 messages using Ruby native syntax.
+
+   http://x12parser.rubyforge.org
+
+   Copyright (C) 2012 P&D Technical Solutions, LLC
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+   $Id: 275.xml 2012-11-23 mjp using version 5010 $
+-->
+
+<Loop name="275" comment="This X12 Transaction Set contains the format and establishes the data contents of the Patient Information Transaction Set (275) for use within the context of an Electronic Data Interchange (EDI) environment.">
+  <Segment name="ST"  max="1" required="y" />
+  <Segment name="BGN" max="1" required="y" />
+
+  <Loop name="L1000A" max="1" required="y">
+    <Segment name="NM1" max="1"  required="y" comment="Information Source Name"/>
+  </Loop>
+  <Loop name="L1000B" max="1" required="y">
+    <Segment name="NM1" max="1" required="y" comment="Information Receiver Name"/>
+  </Loop>
+  <Loop name="L1000C" max="1" required="y">
+    <Segment name="NM1" max="1" required="y" comment="Patient Name"/>
+    <Segment name="REF" max="1"  required="y" comment="Patient Event Trace Number"/>
+  </Loop>
+  <Loop name="L2000A" required="y">
+    <Segment name="LX"  max="1"  required="y" comment="Assigned Number"/>
+    <Segment name="TRN" max="1"  required="y" comment="Attachment Control Number"/>
+    <Segment name="HI" max="1"  required="o" comment="Health Care Information Codes"/>
+    <Segment name="SVC" max="1"  required="o" comment="Service Information"/>
+
+    <Loop name="L2100A" max="1" required="n">
+      <Segment name="DTP" max="1"  required="y" comment="Additional Information Submitted Date"/>
+      <Segment name="CAT" max="1"  required="y" comment="Format and Version Identifier"/>
+      <Loop name="L2110A" max="1" required="n">
+        <Segment name="OOI" max="1"  required="y" comment="Associated Object Type Identification"/>
+        <Segment name="BDS" max="1"  required="y" comment="Binary Data Segment"/>
+      </Loop>
+    </Loop>
+  </Loop>
+  <Segment name="SE" required="y" />
+</Loop>
