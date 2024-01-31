@@ -40,8 +40,8 @@
   <Loop name="L2000A" required="y">
     <Segment name="LX"  max="1"  required="y" comment="Assigned Number"/>
     <Segment name="TRN" max="1"  required="y" comment="Attachment Control Number"/>
-    <Segment name="HI" max="1"  required="o" comment="Health Care Information Codes"/>
-    <Segment name="SVC" max="1"  required="o" comment="Service Information"/>
+    <Segment name="HI" max="1"  required="n" comment="Health Care Information Codes"/>
+    <Segment name="SVC" max="1"  required="n" comment="Service Information"/>
 
     <Loop name="L2100A" max="1" required="n">
       <Segment name="DTP" max="1"  required="y" comment="Additional Information Submitted Date"/>
