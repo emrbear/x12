@@ -54,4 +54,7 @@
     </Loop>
     <Segment name="SE" required="y" />
   </Loop>
+
+  <Segment name="GE"  max="1" required="y"/>
+	<Segment name="IEA" max="1" required="y"/>
 </Loop>
