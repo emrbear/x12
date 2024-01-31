@@ -22,35 +22,36 @@
 
    $Id: 275.xml 2012-11-23 mjp using version 5010 $
 -->
+<Loop name="275" required="y">
+  <Loop name="L275" comment="This X12 Transaction Set contains the format and establishes the data contents of the Patient Information Transaction Set (275) for use within the context of an Electronic Data Interchange (EDI) environment.">
+    <Segment name="ST"  max="1" required="y" />
+    <Segment name="BGN" max="1" required="y" />
 
-<Loop name="275" comment="This X12 Transaction Set contains the format and establishes the data contents of the Patient Information Transaction Set (275) for use within the context of an Electronic Data Interchange (EDI) environment.">
-  <Segment name="ST"  max="1" required="y" />
-  <Segment name="BGN" max="1" required="y" />
+    <Loop name="L1000A" max="1" required="y">
+      <Segment name="NM1" max="1"  required="y" comment="Information Source Name"/>
+    </Loop>
+    <Loop name="L1000B" max="1" required="y">
+      <Segment name="NM1" max="1" required="y" comment="Information Receiver Name"/>
+    </Loop>
+    <Loop name="L1000C" max="1" required="y">
+      <Segment name="NM1" max="1" required="y" comment="Patient Name"/>
+      <Segment name="REF" max="1"  required="y" comment="Patient Event Trace Number"/>
+    </Loop>
+    <Loop name="L2000A" required="y">
+      <Segment name="LX"  max="1"  required="y" comment="Assigned Number"/>
+      <Segment name="TRN" max="1"  required="y" comment="Attachment Control Number"/>
+      <Segment name="HI" max="1"  required="n" comment="Health Care Information Codes"/>
+      <Segment name="SVC" max="1"  required="n" comment="Service Information"/>
 
-  <Loop name="L1000A" max="1" required="y">
-    <Segment name="NM1" max="1"  required="y" comment="Information Source Name"/>
-  </Loop>
-  <Loop name="L1000B" max="1" required="y">
-    <Segment name="NM1" max="1" required="y" comment="Information Receiver Name"/>
-  </Loop>
-  <Loop name="L1000C" max="1" required="y">
-    <Segment name="NM1" max="1" required="y" comment="Patient Name"/>
-    <Segment name="REF" max="1"  required="y" comment="Patient Event Trace Number"/>
-  </Loop>
-  <Loop name="L2000A" required="y">
-    <Segment name="LX"  max="1"  required="y" comment="Assigned Number"/>
-    <Segment name="TRN" max="1"  required="y" comment="Attachment Control Number"/>
-    <Segment name="HI" max="1"  required="n" comment="Health Care Information Codes"/>
-    <Segment name="SVC" max="1"  required="n" comment="Service Information"/>
-
-    <Loop name="L2100A" max="1" required="n">
-      <Segment name="DTP" max="1"  required="y" comment="Additional Information Submitted Date"/>
-      <Segment name="CAT" max="1"  required="y" comment="Format and Version Identifier"/>
-      <Loop name="L2110A" max="1" required="n">
-        <Segment name="OOI" max="1"  required="y" comment="Associated Object Type Identification"/>
-        <Segment name="BDS" max="1"  required="y" comment="Binary Data Segment"/>
+      <Loop name="L2100A" max="1" required="n">
+        <Segment name="DTP" max="1"  required="y" comment="Additional Information Submitted Date"/>
+        <Segment name="CAT" max="1"  required="y" comment="Format and Version Identifier"/>
+        <Loop name="L2110A" max="1" required="n">
+          <Segment name="OOI" max="1"  required="y" comment="Associated Object Type Identification"/>
+          <Segment name="BDS" max="1"  required="y" comment="Binary Data Segment"/>
+        </Loop>
       </Loop>
     </Loop>
+    <Segment name="SE" required="y" />
   </Loop>
-  <Segment name="SE" required="y" />
 </Loop>
