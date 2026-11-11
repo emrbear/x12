@@ -24,35 +24,35 @@
 -->
 
 <Segment name="LIN" comment="To specify basic item identification data">
-  <Field name="AssignedIdentification" required="y" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
+  <Field name="AssignedIdentification" required="n" min="1" max="20" comment="Alphanumeric characters assigned for differentiation within a transaction set"/>
   <Field name="ProductServiceIdQualifier1" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
   <Field name="ProductServiceId1" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier2" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId2" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier3" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId3" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier4" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId4" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier5" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId5" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier6" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId6" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier7" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId7" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier8" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId8" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier9" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId9" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier10" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId10" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier11" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId11" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier12" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId12" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier13" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId13" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier14" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId14" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
-  <Field name="ProductServiceIdQualifier15" required="y" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
-  <Field name="ProductServiceId15" required="y" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier2" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId2" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier3" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId3" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier4" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId4" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier5" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId5" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier6" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId6" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier7" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId7" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier8" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId8" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier9" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId9" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier10" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId10" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier11" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId11" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier12" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId12" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier13" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId13" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier14" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId14" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
+  <Field name="ProductServiceIdQualifier15" required="n" min="2" max="2" validation="T235" comment="Code identifying the type/source of the descriptive number used in Product/Service ID (234)"/>
+  <Field name="ProductServiceId15" required="n" min="1" max="48" comment="Identifying number for a product or service"/>
 </Segment>

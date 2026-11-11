@@ -24,15 +24,15 @@
 -->
 
 <Segment name="CTP" comment="To specify pricing information">
-  <Field name="ClassOfTradeCode" required="y" min="2" max="2" validation="T687" comment="Code indicating class of trade"/>
-  <Field name="PriceIdentifierCode" required="y" min="3" max="3" validation="T236" comment="Code identifying pricing specification"/>
-  <Field name="UnitPrice" type="double" required="y" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
+  <Field name="ClassOfTradeCode" required="n" min="2" max="2" validation="T687" comment="Code indicating class of trade"/>
+  <Field name="PriceIdentifierCode" required="n" min="3" max="3" validation="T236" comment="Code identifying pricing specification"/>
+  <Field name="UnitPrice" type="double" required="n" min="1" max="17" comment="Price per unit of product, service, commodity, etc."/>
   <Field name="Quantity" type="double" required="y" min="1" max="15" comment="Numeric value of quantity"/>
   <Field name="CompositeUnitOfMeasure" type="C001" required="y" min="0" max="inf" comment="To identify a composite unit of measure (See Figures Appendix for examples of use)"/>
-  <Field name="PriceMultiplierQualifier" required="y" min="3" max="3" validation="T648" comment="Code indicating the type of price multiplier"/>
-  <Field name="Multiplier" type="double" required="y" min="1" max="10" comment="Value to be used as a multiplier to obtain a new value"/>
-  <Field name="MonetaryAmount" type="double" required="y" min="1" max="18" comment="Monetary amount"/>
-  <Field name="BasisOfUnitPriceCode" required="y" min="2" max="2" validation="T639" comment="Code identifying the type of unit price for an item"/>
-  <Field name="ConditionValue" required="y" min="1" max="10" comment="Identifies rate restrictions or provisions"/>
-  <Field name="MultiplePriceQuantity" type="long" required="y" min="1" max="2" comment="Quantity of units for a given price, e.g., 3 for $10.00"/>
+  <Field name="PriceMultiplierQualifier" required="n" min="3" max="3" validation="T648" comment="Code indicating the type of price multiplier"/>
+  <Field name="Multiplier" type="double" required="n" min="1" max="10" comment="Value to be used as a multiplier to obtain a new value"/>
+  <Field name="MonetaryAmount" type="double" required="n" min="1" max="18" comment="Monetary amount"/>
+  <Field name="BasisOfUnitPriceCode" required="n" min="2" max="2" validation="T639" comment="Code identifying the type of unit price for an item"/>
+  <Field name="ConditionValue" required="n" min="1" max="10" comment="Identifies rate restrictions or provisions"/>
+  <Field name="MultiplePriceQuantity" type="long" required="n" min="1" max="2" comment="Quantity of units for a given price, e.g., 3 for $10.00"/>
 </Segment>
